@@ -1,3 +1,20 @@
+What to do what to do - Pooh Bear
+Are we trying to make another table
+Update
+-Grab data
+--Similar to Get
+-Change it
+--Find the id of one we are changing
+--Modify that one
+--Return the new list
+-Slap it back
+--Send new list back
+
+
+
+
+
+
 # Adonis API application
 
 This is the boilerplate for creating an API server in AdonisJs, it comes pre-configured with.
