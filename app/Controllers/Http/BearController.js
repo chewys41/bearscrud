@@ -3,6 +3,9 @@
 let bears = [{ id: '0', Type: 'Grizzly', Name: 'Al', Weight: '1000lb' }]
 
 class BearController {
+    
+
+
 
     bearget({request, response}) {
         response.send(bears)
