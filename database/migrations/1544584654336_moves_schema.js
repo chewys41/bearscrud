@@ -7,7 +7,7 @@ class MovesSchema extends Schema {
   up () {
     this.create('moves', (table) => {
       table.increments()
-      table.string('Move')
+      table.string('move')
       table.timestamps()
     })
   }

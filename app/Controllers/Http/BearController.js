@@ -1,7 +1,8 @@
 'use strict'  
 // when typing use strict you have to have const and let
-let bears = [{ id: '0', Type: 'Grizzly', Name: 'Al', Weight: '1000lb' }]
-
+//let bears = [{ id: '0', Type: 'Grizzly', Name: 'Al', Weight: '1000lb' }]
+const Bears=use('App/Models/Bear')
+const Moves = use('App/Models/Move')
 class BearController {
     
 
@@ -43,6 +44,23 @@ class BearController {
         response.send(newBears)
 
     }
+
+
+//     const User = use('App/Models/User')
+
+// const user = await User.find(1)
+// const posts = await user.posts().fetch()
+   async getBearsByMove({request, response, params:{id}}) {
+        
+        const move = await Moves.find(id);
+        const bears = await move.bear().fetch();
+    
+        response.json({
+            data:bears
+        })
+    };
+    
+
 }
 
 module.exports = BearController

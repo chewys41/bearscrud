@@ -3,10 +3,10 @@
 /** @type {typeof import('@adonisjs/lucid/src/Lucid/Model')} */
 const Model = use('Model')
 
-class Bear extends Model {
-    move(){
-        return this.hasOne("App/Models/Move")
+class Move extends Model {
+    bear(){
+        return this.belongsToMany("App/Models/Bear")
     }
 }
 
-module.exports = Bear
+module.exports = Move

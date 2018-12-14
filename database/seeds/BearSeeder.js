@@ -21,19 +21,19 @@ class BearSeeder {
   async run() {
     const Griz = await Factory
       .model('App/Models/Bear')
-      .create({ type: "Grizzly", name: "Mr. Bear", weight: "325" })
+      .create({ type: "Grizzly", name: "Mr. Bear", weight: "325", move_id: 1 })
 
     const Polar = await Factory
       .model('App/Models/Bear')
-      .create({ type: "Polar Bear", name: "Peanuts", weight: "326" })
+      .create({ type: "Polar Bear", name: "Peanuts", weight: "326", move_id: 2 })
 
     const Panda = await Factory
       .model('App/Models/Bear')
-      .create({ type: "Panda", name: "Bambooni", weight: "111" })
+      .create({ type: "Panda", name: "Bambooni", weight: "111", move_id: 3 })
 
     const Koala = await Factory
       .model('App/Models/Bear')
-      .create({ type: "Koala", name: "Teddy", weight: "25" })
+      .create({ type: "Koala", name: "Teddy", weight: "25", move_id: 2 })
   }
 
 

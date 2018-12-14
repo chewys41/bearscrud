@@ -18,7 +18,14 @@ Factory.blueprint('App/Models/Bear', (faker,i,data) => {
   return {
     type:data.type,
     name:data.name,
-    weight:data.weight
+    weight:data.weight,
+    move_id:data.move_id
+
+  }
+})
+Factory.blueprint('App/Models/Move', (faker,i,data) => {
+  return {
+    move:data.move,
 
 
   }
